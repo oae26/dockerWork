@@ -54,6 +54,8 @@ def main():
     parser.add_argument('--url', help="URL that will be encoded",default='https://github.com/oae26')
     args = parser.parse_args()
 
+    setup_logging()
+
     timestamp = datetime.now().strftime('%Y%m%d%H%M%S')
     qr_filename = f"QRCode_{timestamp}.png"
 
